@@ -7,8 +7,9 @@ pipeline {
   }
   stages {
     stage('Clean workspace') {
-        deleteDir()
-        sh 'ls -lah'
+        steps {
+          sh 'ls -lah'
+      }
     }
     stage('Checkout') {
       steps {
