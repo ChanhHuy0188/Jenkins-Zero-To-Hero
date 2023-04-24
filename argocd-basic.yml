@@ -4,4 +4,5 @@ metadata:
   name: example-argocd
   labels:
     example: basic
+  argocd-scrape: true
 spec: {}
